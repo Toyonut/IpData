@@ -4,6 +4,7 @@
   "description": "Heroku API to return the caller IP.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "npm test"
   },
   "repository": {
