@@ -13,10 +13,16 @@ server.route({
   method: 'GET',
   path: '/hello',
   handler: function (req, res) {
-    const ipAddress = {
-      ip: req.headers
+    let ipAddr = req.headers['x-forwarded-for']
+    if (ipAddr) {
+      let list = ipAddr.split(',')
+      ipAddr = list[list.length - 1]
+    } else {
+      ipAddr = req.connection.remoteAddress
     }
-    return res(ipAddress)
+    return res({
+      ip: ipAddr
+    })
   }
 })
 
