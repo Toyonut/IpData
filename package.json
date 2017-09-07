@@ -1,0 +1,28 @@
+{
+  "name": "ipdata",
+  "version": "0.0.1",
+  "description": "Heroku API to return the caller IP.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toyonut/IpData.git"
+  },
+  "keywords": [
+    "IP",
+    "API",
+    "HAPI",
+    "NODE"
+  ],
+  "author": "Paul Milbank",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Toyonut/IpData/issues"
+  },
+  "homepage": "https://github.com/Toyonut/IpData#readme",
+  "dependencies": {
+    "hapi": "^16.5.2"
+  }
+}
