@@ -14,7 +14,7 @@ server.route({
   path: '/hello',
   handler: function (req, res) {
     const ipAddress = {
-      ip: req.headers['X-Forwarded-For']
+      ip: req.headers
     }
     return res(ipAddress)
   }
