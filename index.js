@@ -12,8 +12,11 @@ server.connection({
 server.route({
   method: 'GET',
   path: '/hello',
-  handler: function (request, reply) {
-    return reply('hello world')
+  handler: function (req, res) {
+    const ipAddress = {
+      ip: req.info.remoteAddress
+    }
+    return res(ipAddress)
   }
 })
 
