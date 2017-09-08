@@ -22,7 +22,7 @@ server.route({
     }
     return res({
       ip: ipAddr
-    })
+    }).code(200)
   }
 })
 
