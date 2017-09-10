@@ -12,7 +12,7 @@ server.connection({
 // Add the route
 server.route({
   method: 'GET',
-  path: '/hello',
+  path: '/myip',
   handler: function (req, res) {
     let ipAddr = req.headers['x-forwarded-for']
     if (ipAddr) {
